@@ -1,0 +1,385 @@
+EventId,EventTemplate
+bbb51b95,"{
+    ""Receiving block"": {
+        ""Event Subject"": ""block of data"",
+        ""Event Action Description"": ""Receive or transfer data block from source path to destination path"",
+        ""Event Result"": ""Receive or transfer data block"",
+        ""Events Result Type"": ""no obvious abnormalities""
+    }
+}"
+3d91fa85,"{
+    ""BLOCK* NameSystem.allocateBlock"": {
+        ""Event Subject"": ""block allocation process"",
+        ""Event Action Description"": ""Allocate a block in the NameSystem"",
+        ""Event Result"": ""Block allocation"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+d38aa58d,"{
+    ""PacketResponder <*> for block <*> <*>"": {
+        ""Event Subject"": ""PacketResponder component"",
+        ""Event Action Description"": ""Handle packets for a specific block"",
+        ""Event Result"": ""Handle packets"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+46003790,"{
+    ""Received block <*> of size <*> from /<*>"": {
+        ""Event Subject"": ""received block of data"",
+        ""Event Action Description"": ""Receive a block of data from a source path"",
+        ""Event Result"": ""Receive a block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+5d5de21c,"{
+    ""BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>"": {
+        ""Event Subject"": ""stored block"",
+        ""Event Action Description"": ""Add a stored block to the block map"",
+        ""Event Result"": ""Add block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+44614d71,"{
+    ""Received block <*> src: /<*> dest: /<*> of size <*>"": {
+        ""Event Subject"": ""received block of data"",
+        ""Event Action Description"": ""Receive a block of data from a source path and store it"",
+        ""Event Result"": ""Receive a block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+9c784e29,"{
+    ""<*>:Transmitted block <*> to /<*>"": {
+        ""Event Subject"": ""transmitted block of data"",
+        ""Event Action Description"": ""Transmit a block of data with a specific ID"",
+        ""Event Result"": ""Transmit a block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+75627efd,"{
+    ""<*> Starting thread to transfer block <*> to <*>, <*>"": {
+        ""Event Subject"": ""thread for transferring a block of data"",
+        ""Event Action Description"": ""Start a thread to transfer a block of data"",
+        ""Event Result"": ""Transfer a block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+54e5f6b4,"{
+    ""BLOCK* ask <*> to replicate <*> to datanode(s) <*> <*>"": {
+        ""Event Subject"": ""replication of a block of data"",
+        ""Event Action Description"": ""Request to replicate a block with a specific ID"",
+        ""Event Result"": ""Request to replicate a block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+4dec0816,"{
+    ""<*> Served block <*> to /<*>"": {
+        ""Event Subject"": ""served block"",
+        ""Event Action Description"": ""Successfully serve or deliver a block with a specific ID"",
+        ""Event Result"": ""Serve or deliver a block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+728076ac,"{
+    ""BLOCK* ask <*> to replicate <*> to datanode(s) <*>"": {
+        ""Event Subject"": ""replication of a block of data"",
+        ""Event Action Description"": ""Request to replicate a block with a specific ID to destination datanodes"",
+        ""Event Result"": ""Request to replicate a block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+40651754,"{
+    ""<*> Starting thread to transfer block <*> to <*>"": {
+        ""Event Subject"": ""thread for transferring a block of data"",
+        ""Event Action Description"": ""Start a thread to transfer a block of data with a specific ID"",
+        ""Event Result"": ""Start a thread to transfer a block"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+32777b38,"{
+    ""log_event"": {
+        ""Event Subject"": ""Verification"",
+        ""Event Action Description"": ""Successful completion of verification process."",
+        ""Event Result"": ""Successful verification"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+ace40671,"{
+    ""log_event"": {
+        ""Event Subject"": ""writeBlock"",
+        ""Event Action Description"": ""An exception occurred while attempting to write a block of data."",
+        ""Event Result"": ""An exception occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+e817fa45,"{
+    ""log_event"": {
+        ""Event Subject"": ""PacketResponder"",
+        ""Event Action Description"": ""The PacketResponder process encountered an exception."",
+        ""Event Result"": ""An exception occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+bcc910df,"{
+    ""log_event"": {
+        ""Event Subject"": ""writeBlock"",
+        ""Event Action Description"": ""An IOException occurred while attempting to read from a stream."",
+        ""Event Result"": ""An IOException occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+dba996ef,"{
+    ""log_event"": {
+        ""Event Subject"": ""Deleting block"",
+        ""Event Action Description"": ""The event signifies the removal of a block from a specific file."",
+        ""Event Result"": ""Deleting block completed"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+0567184d,"{
+    ""log_event"": {
+        ""Event Subject"": ""PacketReceiver"",
+        ""Event Action Description"": ""Receiving an empty packet for a specific block."",
+        ""Event Result"": ""Receiving an empty packet"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+69bca6e5,"{
+    ""log_event"": {
+        ""Event Subject"": ""receiveBlock"",
+        ""Event Action Description"": ""An IOException occurred during the receiveBlock process due to the connection being reset by the peer."",
+        ""Event Result"": ""An IOException occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+d013b7a3,"{
+    ""log_event"": {
+        ""Event Subject"": ""writeBlock"",
+        ""Event Action Description"": ""An IOException occurred during the writeBlock process due to the connection being reset by the peer."",
+        ""Event Result"": ""An IOException occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+c294d20f,"{
+    ""log_event"": {
+        ""Event Subject"": ""block"",
+        ""Event Action Description"": ""Received redundant addStoredBlock request"",
+        ""Event Result"": ""It indicates a duplication or redundancy in the storage of the block"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+a5478aff,"{
+    ""log_event"": {
+        ""Event Subject"": ""PacketResponder"",
+        ""Event Action Description"": ""A SocketTimeoutException occurred while waiting for a channel to be ready for reading."",
+        ""Event Result"": ""Timeout occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+f7c33085,"{
+    ""log_event"": {
+        ""Event Subject"": ""PacketResponder"",
+        ""Event Action Description"": ""An InterruptedIOException occurred while waiting for IO on a socket channel."",
+        ""Event Result"": ""An interrupted exception occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+f266840a,"{
+    ""log_event"": {
+        ""Event Subject"": ""receiveBlock"",
+        ""Event Action Description"": ""An exception occurred while receiving a block."",
+        ""Event Result"": ""An exception occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+15b484af,"{
+    ""log_event"": {
+        ""Event Subject"": ""Block file offset change"",
+        ""Event Action Description"": ""The block file offset is being changed from one value to another, along with the corresponding meta file offset."",
+        ""Event Result"": ""Block file offset change"",
+        ""Event Result Type"": ""no obvious abnormalities""
+    }
+}"
+9621139e,"{
+    ""log_event"": {
+        ""Event Subject"": ""Block writing to mirror"",
+        ""Event Action Description"": ""An exception occurred while writing a block to a mirror."",
+        ""Event Result"": ""An exception occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+d62e5638,"{
+    ""log_event"": {
+        ""Event Subject"": ""receiveBlock"",
+        ""Event Action Description"": ""An exception of type InterruptedIOException occurred while waiting for IO on a socket channel during the receiveBlock operation."",
+        ""Event Result"": ""An exception occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+1061e5d9,"{
+    ""log_event"": {
+        ""Event Subject"": ""writeBlock"",
+        ""Event Action Description"": ""An exception of type InterruptedIOException occurred while waiting for IO on a socket channel during the writeBlock operation."",
+        ""Event Result"": ""An exception occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+2ecc047e,"{
+    ""log_event"": {
+        ""Event Subject"": ""PacketResponder"",
+        ""Event Action Description"": ""An IOException of type Broken pipe occurred."",
+        ""Event Result"": ""Broken pipe occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+4610d0f1,"{
+    ""log_event"": {
+        ""Event Subject"": ""writeBlock"",
+        ""Event Action Description"": ""An IOException occurred, specifying that the block is valid but cannot be written to."",
+        ""Event Result"": ""An IOException occurred"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+1a718242,"{
+    ""log_event"": {
+        ""Event Subject"": ""System"",
+        ""Event Action Description"": ""Failed to transfer a specific file from one location to another."",
+        ""Event Result"": ""Failed transfer"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+d63ef163,"{
+    ""NameSystem.delete"": {
+        ""Event Subject"": ""NameSystem.delete function"",
+        ""Event Action Description"": ""Addition of an item to the invalidSet"",
+        ""Event Result"": ""invalidSet containing an additional item"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+2e68ccc3,"{
+    ""BlockDeletion"": {
+        ""Event Subject"": ""Block deletion process"",
+        ""Event Action Description"": ""Error encountered while trying to delete a block"",
+        ""Event Result"": ""Failed block deletion"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+8f2bc724,"{
+    ""NameSystem.addStoredBlock"": {
+        ""Event Subject"": ""NameSystem.addStoredBlock function"",
+        ""Event Action Description"": ""AddStoredBlock request received for a block not belonging to any file"",
+        ""Event Result"": ""Rejection or failure of the addStoredBlock request"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+a333d363,"{
+    ""ItemServing"": {
+        ""Event Subject"": ""Item serving process"",
+        ""Event Action Description"": ""Exception encountered while serving an item"",
+        ""Event Result"": ""Unsuccessful serving attempt"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+e024fa48,"{
+    ""PacketResponder"": {
+        ""Event Subject"": ""PacketResponder"",
+        ""Event Action Description"": ""IOException caused by connection reset by peer"",
+        ""Event Result"": ""Exception thrown"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+25382c88,"{
+    ""receiveBlock"": {
+        ""Event Subject"": ""receiveBlock operation"",
+        ""Event Action Description"": ""SocketTimeoutException occurred while waiting for channel to be ready for write"",
+        ""Event Result"": ""Failure of the receiveBlock operation"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+20317105,"{
+    ""writeBlock"": {
+        ""Event Subject"": ""writeBlock operation"",
+        ""Event Action Description"": ""SocketTimeoutException occurred while waiting for channel to be ready for write"",
+        ""Event Result"": ""Failure of the writeBlock operation"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+06d16156,"{
+    ""Reopen Block"": {
+        ""Event Subject"": ""Block being reopened"",
+        ""Event Action Description"": ""Block is being reopened"",
+        ""Event Result"": ""Block reopened"",
+        ""Events Result Type"": ""no obvious abnormalities""
+    }
+}"
+78915d3a,"{
+    ""PacketResponder"": {
+        ""Event Subject"": ""PacketResponder process"",
+        ""Event Action Description"": ""Closed By Interrupt Exception occurred"",
+        ""Event Result"": ""Interruption or termination of the PacketResponder process"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+13eb7010,"{
+    ""Remove Block From Needed Replications"": {
+        ""Event Subject"": ""neededReplications"",
+        ""Event Action Description"": ""Block removed as it does not belong to any file"",
+        ""Event Result"": ""Successful removal of the block from neededReplications"",
+        ""Events Result Type"": ""no obvious abnormalities""
+    }
+}"
+f79898ae,"{
+    ""PendingReplicationMonitor Timeout"": {
+        ""Event Subject"": ""PendingReplicationMonitor"",
+        ""Event Action Description"": ""Block timed out in the PendingReplicationMonitor"",
+        ""Event Result"": ""Timeout"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+124068c6,"{
+    ""Write Block Exception"": {
+        ""Event Subject"": ""Block being written"",
+        ""Event Action Description"": ""IOException occurred while writing the block"",
+        ""Event Result"": ""Error in the block writing process"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+625a2a34,"{
+    ""PacketResponder InterruptedIOException"": {
+        ""Event Subject"": ""PacketResponder process"",
+        ""Event Action Description"": ""InterruptedIOException occurred while waiting for IO on a closed SocketChannel"",
+        ""Event Result"": ""Error in the PacketResponder process"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+b65fc512,"{
+    ""Write Block NoRouteToHostException"": {
+        ""Event Subject"": ""Block being written"",
+        ""Event Action Description"": ""NoRouteToHostException occurred while writing the block"",
+        ""Event Result"": ""Error in the block writing process"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+fcd37a6d,"{
+    ""Add Existing Block"": {
+        ""Event Subject"": ""Adding an already existing block"",
+        ""Event Action Description"": ""Attempted to add a block that already exists"",
+        ""Event Result"": ""Block already existing"",
+        ""Event Result Type"": ""probably cause anomalies""
+    }
+}"
+559305d8,"{
+    ""ReceiveBlock IOException"": {
+        ""Event Subject"": ""Specific block"",
+        ""Event Action Description"": ""IOException occurred in the receiveBlock process due to a broken pipe"",
+        ""Event Result"": ""Error in the receiveBlock process"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
+fcf2c482,"{
+    ""PacketResponder IOException"": {
+        ""Event Subject"": ""PacketResponder process"",
+        ""Event Action Description"": ""IOException occurred indicating that the stream is closed"",
+        ""Event Result"": ""Error in the PacketResponder process"",
+        ""Events Result Type"": ""probably cause anomalies""
+    }
+}"
