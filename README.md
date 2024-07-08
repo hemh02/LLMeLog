@@ -64,7 +64,7 @@ transformers==4.15.0
 
 You need to follow these steps to **completely** run `LLMeLog`.
 - **Step 1:** Download [Log Data](https://github.com/logpai/loghub) and put it under `data` folder.
-- **Step 2:** Using [Drain](https://github.com/logpai/loghub) to parse the unstructed logs.
+- **Step 2:** Using [Drain](https://github.com/IBM/Drain3) to parse the unstructed logs.
 - **Step 3:** Download `bert-base` from [Hugging Face](https://huggingface.co/bert-base-uncased), and put it under `bert-base-en` folder.
 - **Step 4:** Enriching the log event with the provided prompt, we recommend using [ChatGPT](https://chat.openai.com/).
 
