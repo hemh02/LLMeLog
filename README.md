@@ -1,18 +1,23 @@
-﻿# LLMeLog 
+﻿# 🔥LLMeLog: An Approach for Anomaly Detection based on LLM-enriched Log Events
 
+<img src="imgs/pipeline.jpg" alt="drawing" width="100%"/>
 
+This is the basic implementation of our paper in ISSRE 2024 (Research Track): **LLMeLog: An Approach for Anomaly Detection based on LLM-enriched Log Events**
 
-
-This is the basic implementation of: **LLMeLog: An Approach for Anomaly Detection based on LLM-enriched Log Events.**.
 - [LLMeLog](#llmelog)
   * [Project Structure](#project-structure)
   * [Datasets](#datasets)
-    + [Environment:](#environment)
-    + [Preparation](#preparation)
-  * [Run](#run)
+  * [Environment](#environment)
+  
+  - [Preparation](#preparation)
+  
+  - [Quick Start](#quick-start)
 
+## 📌 Description
 
-## Project Structure
+Log-based anomaly detection is an essential task in maintaining software reliability. Existing log-based anomaly detection approaches often consist of three key phases: log parsing, event embedding, and model construction. Event embedding efficiently extracts semantic information from log events and produces vector representations of log events. However, existing event embedding methods suffer from two key problems. First, semantic noises are buried in log events leading to inevitable gaps between the obtained semantics from log events and their essential meanings. Second, there exists a gap between general semantic embedding and the specific embedding requirement of anomaly detection tasks. To mitigate these problems and improve the quality of representations of log events, we propose a novel anomaly detection approach named LLMeLog. It leverages the capabilities of large language models (LLMs) to enrich the contents of log events with in-context learning techniques. Then it utilizes the enriched log events to fine-tune a pre-trained BERT model. At last, it trains a transformer-based anomaly detection model with the event representations produced by the pre-trained BERT model. Evaluation results on three public log datasets show that LLMeLog achieves the best performance across all datasets, boasting F1-scores exceeding 99%. Besides, when using only 10% of labeled data as training data, our approach can still achieve over 90% F1-scores.
+
+## 🔍 Project Structure
 
 ```
 ├─checkpoint      # Saved models
@@ -27,7 +32,7 @@ This is the basic implementation of: **LLMeLog: An Approach for Anomaly Detectio
 └─predata.py      # Data preprocess
 ```
 
-## Datasets
+## 📑 Datasets
 
 We used `3` open-source log datasets for evaluation, HDFS, BGL and Thunderbird. 
 
@@ -39,7 +44,7 @@ We used `3` open-source log datasets for evaluation, HDFS, BGL and Thunderbird.
 
 **Note:** Considering the huge scale of the Thunderbird dataset, we followed the settings of the previous study [LogADEmpirical](https://github.com/LogIntelligence/LogADEmpirical) and selected the earliest 10 million log messages from the Thunderbird dataset for experimentation. 
 
-### Environment
+## ⚙️ Environment
 
 **Key Packages:**
 
@@ -58,9 +63,7 @@ transformers==4.15.0
 [Drain3](https://github.com/IBM/Drain3)
 
 
-
-
-### Preparation
+## 📜 Preparation
 
 You need to follow these steps to **completely** run `LLMeLog`.
 - **Step 1:** Download [Log Data](https://github.com/logpai/loghub) and put it under `data` folder.
@@ -69,30 +72,55 @@ You need to follow these steps to **completely** run `LLMeLog`.
 - **Step 4:** Enriching the log event with the provided prompt, we recommend using [ChatGPT](https://chat.openai.com/).
 
 
-## Run
+## 🚀 Quick Start
 you can run `LLMeLog` on HDFS dataset with this code:
 
-- Preprocessing data for training and evaluation.
+#### 👉 **Stage 1:** Preprocessing data for training and evaluation.
+
 ```
 python predata.py --dataset hdfs
 ```
 
-- Hierarchical Semantic Fine-tuning.
+#### 👉 **Stage 2:** Hierarchical Semantic Fine-tuning.
+
 ```
 python main.py --mode train --encoder 1 --dataset hdfs --lr 0.0002
 ```
 
-- Event Embedding within Fine-tuned BERT.
+#### 👉 **Stage 3:** Event Embedding within Fine-tuned BERT.
+
 ```
 python main.py --mode gen --encoder 1 --dataset hdfs --lr 0.0002
 ```
 
-- Training Transoformer for Log-based Anomaly Detection.
+#### 👉 **Stage 4:** Training Transoformer for Log-based Anomaly Detection.
+
 ```
 python main.py --mode train --dataset hdfs --batch_size 256 --lr 0.0003
 ```
 
-- Evaluation on HDFS Dataset.
+#### 👉 **Stage 5:** Evaluation on HDFS Dataset.
+
 ```
 python main.py --mode eval --dataset hdfs --batch_size 256 --lr 0.0003 --load_checkpoint True
 ```
+
+## 📝 Citation and Reference
+
+If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
+
+```
+@inproceedings{he2024llmelog,
+  title={LLMeLog: An Approach for Anomaly Detection based on LLM-enriched Log Events},
+  author={He, Minghua and Jia, Tong and Duan, Chiming and Cai, Huaqian and Li, Ying and Huang, Gang},
+  booktitle={2024 IEEE 35th International Symposium on Software Reliability Engineering (ISSRE)},
+  pages={132--143},
+  year={2024},
+  organization={IEEE}
+}
+```
+
+ 
+
+
+
